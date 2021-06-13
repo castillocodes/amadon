@@ -1,0 +1,22 @@
+.table {
+    border: 2px solid black;
+}
+
+.table__head {
+    background-color: #CCCCCC;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(235, 233, 233);
+}
+
+.btn__submit {
+    background-color: green;
+    color: rgb(255, 250, 243);
+}

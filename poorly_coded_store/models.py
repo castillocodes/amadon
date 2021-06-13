@@ -5,6 +5,8 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=5)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    def __repr__(self):
+        return f"<Product object: {self.title} ({self.id})>"
 
 class Order(models.Model):
     quantity_ordered = models.IntegerField()
